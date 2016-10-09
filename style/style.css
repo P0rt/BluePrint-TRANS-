@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'FuturaRegular';
+  src: url(../fonts/futuralight-webfont.ttf);
+}
+
+body {
+  font-family: 'FuturaRegular', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.Header {
+  padding-top: 50px;
+}
+
+.Header-logo {
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 50px;
+  background-image: url(../images/smile.jpg);
+  background-position: center;
+  border-radius: 900px;
+  background-size: 134px;
+  transition: opacity .4s ease;
+}
+
+.Header-logo:hover, .Header-navLink:hover {
+  opacity: .35;
+}
+
+.Header-navRow {
+  margin: auto;
+  width: 940px;
+}
+
+.Header-nav {
+  width: 70%;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Header-navLink {
+  font-family: 'FuturaRegular';
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 12px;
+  letter-spacing: 3px;
+  transition: opacity .2s ease;
+}
+
+.Banner-image {
+  border-radius: 100px;
+  display: block;
+  width: 940px;
+  height: 529px;
+  margin: 0 auto;
+  background-image: url(../images/1.jpg);
+  background-size:cover;
+  background-position: center;
+  position: relative;
+}
+
+.Banner-layer {
+border-radius: 100px;
+ opacity: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(124, 255, 0,.6);
+ transition: opacity .5s ease;
+}
+
+.Banner-title {
+  opacity: 0;
+  bottom: 100px;
+  left:50%; /*что бы появлялся в левом верхнем углу*/
+  position: absolute;
+  font-size: 24px;
+  line-height: 32px;
+  color:#000000;
+  font-family: 'FuturaRegular';
+  font-weight: 500;
+  transition: opacity .1s ease;
+  transform: translateX(-50%);
+}
+
+.Banner-image:hover .Banner-layer, .Banner-image:hover .Banner-title {
+  opacity: 1;
+}
+
+.Subscribe-content {
+  position: relative;
+  width: 450px;
+  margin: 20px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Subscribe-label {
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'FuturaRegular';
+}
+
+.Subscribe-input {
+  width: 220px;
+  height: 22px;
+  border: 1px solid #e3e3e3;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #000000;
+  padding: 0 5px;
+}
+/*уберает внешнее выделение у формы записи мэла*/
+.Subscribe-input:focus {
+  outline: none;
+}
+
+.Subscribe-send {
+   position: absolute;
+   right: 3px;
+   display: block;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 5px 0 5px 7px;
+   border-color: transparent #c9c9c9 ;
+   padding: 0;
+   background: transparent;
+}
+
+.Books-content {
+  width: 940px;
+  margin: 0 auto 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Book {
+  width: 30%
+}
+
+.Books-title {
+  font-family: 'FuturaRegular';
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.Book-image {
+  margin: 10px 0;
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  transition: .9s;
+}
+
+.Book-image:hover {
+  transform: scale(1.1);
+}
+
+.Book-text {
+  font-family: 'FuturaRegular';
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+}
+
+.Book-category {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: 'FuturaRegular';
+  text-align: center;
+  margin: 5px 0 19px;
+
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration:underline;
+}
+.a1 {
+  color:grey;
+  text-decoration: none;
+}
+.a1:hover {
+  text-decoration: none;
+}
+.Book-image--1 {
+  background-image: url(../images/2.jpg);
+}
+
+.Book-image--2 {
+  background-image: url(../images/3.jpg);
+}
+
+.Book-image--3 {
+  background-image: url(../images/1.jpg);
+}
+
+.Content {
+  width: 940px;
+  margin: 0 auto 45px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.Content-Block {
+  flex-direction: column;
+  width: 30%;
+}
+.Content-Block2 {
+  flex-direction: column;
+  width: 30%;
+}
+.Content-Block3 {
+  flex-direction: column;
+  width: 30%;
+}
+.Content-Card {
+  margin: 10px 0;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+}
+
+.Content-images  {background-image: url(../images/5.jpg);}
+.Content-images2 {background-image: url(../images/7.jpg);
+                  height: 600px;}
+.Content-images3 {background-image: url(../images/9.jpg);
+                  height: 300px;}
+.Content-images4 {
+  background-image: url(../images/1.gif);
+}
+
+.Content-images5 {
+background-image: url(../images/6.jpg);
+background-position: left;
+transition: all 1s ease-out;
+}
+.Content-images5:hover {
+ transform: translate(78px,0);
+}
+.Content-images6 {
+background-image: url(../images/4.jpg);
+}
+
+.Content-images7 {
+background-image: url(../images/7.jpg);
+}
+.Content-images8 {
+  background-image: url(../images/6.jpg);
+  background-position:right;
+}
+.Content-images9 {
+    background-image: url(../images/8.gif);
+}
+.Content-Card {
+
+}
+.Social-link {
+  width: 300px;
+  height: 50px;
+  background-position: center;
+  margin: 100px auto 50px;
+  display: flex;
+  justify-content:space-between;
+}
+.fb:hover, .vk:hover, .inst:hover {
+  opacity: .35;
+}
+
+.fb {
+  background-image: url(../images/fb.svg);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity .4s ease;
+}
+.vk {
+  background-image: url(../images/vk.svg);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity .4s ease;
+}
+.inst {
+  background-image: url(../images/inst.svg);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity .4s ease;
+}
+
+.Footer-Navigation {
+  margin: auto;
+  width: 940px;
+  display: flex;
+  justify-content:space-around;
+  border-bottom: groove;
+}
+.Footer-Navigation--links {
+  font-family: 'FuturaRegular';
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 13px;
+  margin: 10px 0 50px;
+}

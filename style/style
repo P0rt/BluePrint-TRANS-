@@ -1,0 +1,39 @@
+
+
+body {
+  font-family: 'FuturaRegular', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.Header {
+  padding-top: 65px;
+}
+
+.Header-logo {
+  display: block;
+  width: 296px;
+  height: 90px;
+  margin: 0 auto 50px;
+  background-image: url(/Users/p0rt/Desktop/BluePrint/images/logo.svg;);
+  transition: opacity .4s ease;
+}
+ .Header-navRow {
+   margin: auto;
+   width: 940px;
+ }
+
+.Header-logo:hover, .Header-navLink:hover {
+  opacity: .35;
+}
+
+.Header-navRow {
+  margin: auto;
+  width: 940px;
+}
+
+.Header-nav {
+  width: 70%;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-around;
+}
