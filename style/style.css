@@ -2,7 +2,11 @@
   font-family: 'FuturaRegular';
   src: url(../fonts/futuralight-webfont.ttf);
 }
-
+/*для всех элемнтов падинг внутрь и не тянет элементы*/
+* {
+  box-sizing: border-box;
+}
+/*для всех элемнтов падинг внутрь и не тянет элементы*/
 body {
   font-family: 'FuturaRegular', Helvetica, Arial, sans-serif;
   font-weight: 600;
